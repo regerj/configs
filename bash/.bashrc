@@ -50,10 +50,15 @@ alias vim="nvim"
 ##############################################
 # eza customization
 ##############################################
-alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions --tree --level=2"
+alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions --tree --level=1"
 
 ##############################################
 # zoxide customization
 ##############################################
 alias cd="z"
 eval "$(zoxide init bash)"
+
+##############################################
+# NixOS customization
+##############################################
+alias edit-nixos="sudo nvim /etc/nixos/configuration.nix"
